@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+  <div class="container">
+
+    <h1>Add a puppy</h1>
+
+   <form action="/puppies" method="POST">
+  <div class="form-group">
+    <label for="puppyName">Puppy Name</label>
+    <input type="text" class="form-control" name="name" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label for="puppyAge">Puppy Age</label>
+    <input type="text" class="form-control" name="age" placeholder="Age">
+  </div>
+
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+  </div>
+
+{% endblock %}
